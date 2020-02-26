@@ -8,12 +8,23 @@ var ColorSecreto;
 var tiempoInicio;
 function comenzar()
 {
+   var colorSecreto;
+    var random;
+    var minimo = 1;
+    var maximo= 7;
 
+random = Math.floor(Math.random())
+
+document.getElementById("ColorElejido").value = colorSecreto;
 	
 
 }//FIN DE LA FUNCIÓN
 function Responder(colorParametro)
 {
+    var tiempofinal;
+    var tiempototal;
+
+
 	
 	
 

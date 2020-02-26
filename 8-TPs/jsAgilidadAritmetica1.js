@@ -7,14 +7,48 @@ y una de las cuatro operaciones básicas (suma, resta,
 se debe informar si el resultado es el correcto o no.
 */
 var respuesta;
-function comenzar()
-{
+function comenzar() {
+  
+    var PrimerNumero;
+    var SegundoNumero;
+    var operador;
+    var operadorRandom;
 
-	
+    PrimerNumero = Math.floor(Math.random() * (11 - 1) + 1);
+    SegundoNumero = Math.floor(Math.random() * (11 - 1) + 1);
+
+    operadorRandom = Math.Floor(Math.random() * (5 - 1) + 1);
+
+     switch (operadorRandom)  {
+        case 1:
+        resultadoFinal = PrimerNumero + SegundoNumero;
+        break;
+
+        case 2:
+        resultadoFinal = PrimerNumero - SegundoNumero;
+        break;
+
+        case 3:
+        resultadoFinal = PrimerNumero * SegundoNumero;
+        break;
+
+        case 4:
+        resultdoFinal = PrimerNumero / SegundoNumero;
+        break;
+        default:
+
+
+
+
+    }
+    
+
+
+
+
 
 }//FIN DE LA FUNCIÓN
-function Responder()
-{
-	
+function Responder() {
+
 
 }//FIN DE LA FUNCIÓN

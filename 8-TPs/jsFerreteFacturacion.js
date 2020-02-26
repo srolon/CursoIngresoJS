@@ -10,18 +10,18 @@ function Sumar() {
     var precioUno;
     var PrecioDos;
     var precioTres;
-    var precioparciado1;
-    var precioparciado2;
-    var precioparciado3;
-    var resultado;
+    var precioparseado1;
+    var precioparseado2;
+    var precioparseado3;
+    var suma;
 
     precioUno = document.getElementById("PrecioUno").value;
     PrecioDos = document.getElementById("PrecioDos").value;
     precioTres = document.getElementById("PrecioTres").value;
-    precioparciado1 = parseInt(precioUno);
-    precioparciado2 = parseInt(PrecioDos);
-    precioparciado3 = parseInt(precioTres);
-    suma = precioparciado1 + precioparciado2 + precioparciado3;
+    precioparseado1 = parseInt(precioUno);
+    precioparseado2 = parseInt(PrecioDos);
+    precioparseado3 = parseInt(precioTres);
+    suma = precioparseado1 + precioparseado2 + precioparseado3;
 
     alert("El resultado es : " + suma);
 
@@ -36,18 +36,18 @@ function Promedio() {
     var precioUno;
     var PrecioDos;
     var precioTres;
-    var precioparciado1;
-    var precioparciado2;
-    var precioparciado3;
+    var precioparseado1;
+    var precioparseado2;
+    var precioparseado3;
     var promedio;
 
     precioUno = document.getElementById("PrecioUno").value;
     PrecioDos = document.getElementById("PrecioDos").value;
     precioTres = document.getElementById("PrecioTres").value;
-    precioparciado1 = parseInt(precioUno);
-    precioparciado2 = parseInt(PrecioDos);
-    precioparciado3 = parseInt(precioTres);
-    promedio = (precioparciado1 + precioparciado2 + precioparciado3) / 3;
+    precioparseado1 = parseInt(precioUno);
+    precioparseado2 = parseInt(PrecioDos);
+    precioparseado3 = parseInt(precioTres);
+    promedio = (precioparseado1 + precioparseado2 + precioparseado3) / 3;
 
     alert("El resultado es : " + promedio);
 }
