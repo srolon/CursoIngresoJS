@@ -27,9 +27,9 @@ function mostrar() {
         operacion = numero1 + numero2;
         if (operacion > 10) {
             alert("la suma es:" + operacion + "y es mayor a 10");
-        }
+        }else{
         alert(operacion);
-
+        }
 
     }
 
