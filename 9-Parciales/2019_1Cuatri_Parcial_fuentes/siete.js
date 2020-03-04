@@ -16,11 +16,11 @@ function mostrar() {
 
 
 
-        altura = parseInt(prompt("ingrese altura en centimetros"));
+        altura = parseInt(prompt("ingrese altura en centimetros entre 0 y 250"));
 
 
         while (altura < 0 || altura > 250 || isNaN(altura)) {
-            altura = prompt("dato incorrecto, ingrese altura nuevamente");
+            altura = prompt("dato incorrecto, ingrese altura entre 0 y 250");
 
         }
 
