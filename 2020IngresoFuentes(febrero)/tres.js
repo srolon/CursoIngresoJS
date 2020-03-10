@@ -89,7 +89,7 @@ function mostrar() {
 
 	document.write("El nombre del casado más joven es : " + nombreCasadoMasJoven + "</br>");
 	document.write("El sexo del pasajero/a más viejo es  : " + sexoPasajeroMasViejo + "</br>");
-	document.write("Cantidad de mujeres casadas o viudas es : " + contador + "</br>");
+	document.write("Cantidad de mujeres casadas o viudas es : " + contadorMujeresCasadas + "</br>");
 	document.write("El promedio de mujeres es : " + promedioMujeres + "</br>");
 	document.write("El promedio de edad entre los hombres solteros es : " + promedioHombresSolteros + "</br>");
 

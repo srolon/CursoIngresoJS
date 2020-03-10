@@ -52,10 +52,10 @@ Function mostrar()
 		}
 		// Punto B
 
-		if (cantidad > cantidadMaxima || flag == 0)
+		if (cantidad > cantidadMaxima || flag == 0){ 
 			cantidadMaxima = cantidad;
 		fabricanteCantidadMaximo = fabricante;
-		flag = 1;
+		flag = 1; }
 
 
 		// Punto C
@@ -123,4 +123,4 @@ Function mostrar()
 
 
 	
-}
+
