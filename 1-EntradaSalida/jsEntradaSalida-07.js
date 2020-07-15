@@ -22,7 +22,7 @@ function sumar()
 	
 	
 	
-		alert("El resultado es : " + suma);
+		alert("El resultado es : " + sumar);
 	}
 
 
