@@ -28,29 +28,69 @@ alert("La suma es : " + suma);
 
 	
 }
+
+//Esto pertenece al punto B//
+
+
+
+
 function Promedio () 
 {   
-    
     var precioUno;
     var precioDos;
     var precioTres;
+    var suma;
     var promedio;
+
+    
+    precioUno = txtIdPrecioUno.value;
+    precioDos = txtIdPrecioDos.value;
+    precioTres = txtIdPrecioTres.value;
+
+    precioUno = parseInt(precioUno);
+    precioDos = parseInt( precioDos);
+    precioTres = parseInt( precioTres);
+
+
+    suma = precioUno + precioDos + precioTres;
+    promedio = suma/3;
+
+
+alert("El promedio de la suma de los 3 numeros  es : " + promedio);
+
+}
+
+// Esto pertenece al punto C//
+
+function PrecioFinal () 
+{
+    var precioUno;
+    var precioDos;
+    var precioTres;
+    var iva;
+    var precioUnoConIva;
+    var precioDosConIva;
+    var precioTresConIva;
+    var precioFinalConIva;
 
 
     precioUno = txtIdPrecioUno.value;
     precioDos = txtIdPrecioDos.value;
     precioTres = txtIdPrecioTres.value;
+    
 
-    precioUno = parseInt( precioUno);
+    precioUno = parseInt(precioUno);
     precioDos = parseInt( precioDos);
     precioTres = parseInt( precioTres);
+    iva = 0.21;
 
-    promedio = ( precioUno + PrecioDos + precioTres ) / 3;
+    precioUnoConIva = precioUno + (precioUno*iva);
+    precioDosConIva = precioDos + (precioDos*iva);
+    precioTresConIva = precioTres + (precioTres*iva);
+    PrecioFinalConIva = precioUnoConIva + precioDosConIva + precioTresConIva;
 
-    alert("El promedio es : " + promedio);
-	
-}
-function PrecioFinal () 
-{
+    alert("El precio final de la suma de los 3 productos es: " + precioFinalConIva);
+
+
 	
 }
