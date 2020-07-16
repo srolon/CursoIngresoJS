@@ -5,8 +5,8 @@ function mostrar()
 {
 	var nombreIngresado;
 
-	nombreIngresado=txtIdNombre.value;
-	
+	nombreIngresado=getElementtxtIdNo;
+
 	alert("ok");
 
 }
