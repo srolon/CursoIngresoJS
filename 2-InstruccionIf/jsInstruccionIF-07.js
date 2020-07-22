@@ -3,16 +3,16 @@ function mostrar()
  mostrar el siguiente mensaje: 'Es muy pequeño para NO ser soltero.'*/
 
 var edad;
-var estadoCivil;
+var estadoCivilseleccionado;
 
 edad = txtIdEdad.value;
 edad = parseInt(edad);
-estadoCivil = estadoCivil.value;
+estadoCivilseleccionado = estadoCivil.value;
 
 
-if (edad < 18 && estadoCivil != "Soltero" ){
+if (edad < 18 && estadoCivilseleccionado != "Soltero" ){
 
-	alert("Usted es muy pequeño para No ser soltero")
+		alert("Usted es muy pequeño para No ser soltero");
 }
 
 
