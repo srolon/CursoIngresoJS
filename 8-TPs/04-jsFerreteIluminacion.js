@@ -12,22 +12,80 @@ function CalcularPrecio ()
 {
 
     var cantidadLamparas;
-    var precioFinalLamparas = 35;
+    var precioLamparas = 35;
+    var ImpuestoDelPrecio;
     var precioConDescuento;
-    var marca;
+    var marcaElegida;
+    
 
 
 
     cantidadLamparas = txtIdCantidad.value;
-    cantidadLamparas = parseInt(cantidadLamparas);
-    precioFinalLamparas = parseInt(precioFinalLamparas);
-    precioConDescuento = txtIdprecioDescuento.value;
-    precioConDescuento = parseInt(precioConDescuento);
-    marca = Marca.value;
+    precioLamparas = parseInt(precioLamparas);
+    precioConDescuento = cantidadLamparas*precioLamparas;
+    marcaElegida = Marca.value;
 
 
-     //Punto A//
+     //Punto A
 
-     
+     if(cantidadLamparas > 5)
+        {
+        precioConDescuento = precioConDescuento*0.5;
+        }
+
+            // Punto B
+
+
+     if(cantidadLamparas == 5 && marcaElegida == "ArgentinaLuz" ) 
+        {
+        precioConDescuento = precioConDescuento*0.4;
+        }
+         else 
+        {
+            precioConDescuento = precioConDescuento*0.3;
+         }
+
+         // Punto C
+
+         if (cantidadLamparas == 4 && marcaElegida == "ArgentinaLuz" || marcaElegida == "FelipeLamparas")
+             {
+                 precioConDescuento = precioConDescuento*0.25;
+             } 
+             else {
+                precioConDescuento = precioConDescuento*0.20;
+             }
     
-}
+
+             // Punto D
+
+
+             if(cantidadLamparas == 3 && marcaElegida == "ArgentinaLuz" )
+             {
+               
+                precioConDescuento = precioConDescuento*0.15;
+             } 
+
+             if(cantidadLamparas == 3 && marcaElegida == "FelipeLamparas" )
+             {
+                precioConDescuento = precioConDescuento*0.10;
+             }
+             else {
+                precioConDescuento = precioConDescuento*0.05;
+             }
+                
+
+                // Punto E
+
+                txtIdprecioDescuento.value = precioConDescuento;
+
+
+
+
+
+
+
+
+
+
+            }
+
