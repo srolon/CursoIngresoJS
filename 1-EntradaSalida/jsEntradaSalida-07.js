@@ -4,88 +4,94 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{	
-
-
+	
+{
+	//Declaro variables
 	var numeroUno;
 	var numeroDos;
 	var suma;
-	
-	numeroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;
-	
-	numeroUno=parseInt(numeroUno);
-	numeroDos=parseInt(numeroDos);
-	
+
+	//Tomo datos por value
+	numeroUno = txtIdNumeroUno.value;
+	numeroDos = txtIdNumeroDos.value;
+
+	//Parseo variables
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	// Realizo las operaciones
+
 	suma = numeroUno + numeroDos;
-	
-	
-	
-	
-		alert("El resultado es : " + sumar);
-	}
 
 
-
-function restar()
+	alert("El resultado de la suma es : " + suma);
+}
 {
 	var numeroUno;
 	var numeroDos;
 	var resta;
-	
-	numeroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;
-	
-	numeroUno=parseInt(numeroUno);
-	numeroDos=parseInt(numeroDos);
-	
+
+	//Tomo datos por value
+	numeroUno = txtIdNumeroUno.value;
+	numeroDos = txtIdNumeroDos.value;
+
+	//Parseo variables
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	// Realizo las operaciones
+
 	resta = numeroUno - numeroDos;
 
-	alert("El resultado es : " + resta);
-	
-}
 
-function multiplicar()
-{ 
+	alert("El resultado de la resta es : " + resta);
 
-	var numeroUno;
-	var numeroDos;
-	var multiplicacion;
+	 }
+	 {
+		var numeroUno;
+		var numeroDos;
+		var multiplicacion;
 	
-	numeroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;
+		//Tomo datos por value
+		numeroUno = txtIdNumeroUno.value;
+		numeroDos = txtIdNumeroDos.value;
 	
-	numeroUno=parseInt(numeroUno);
-	numeroDos=parseInt(numeroDos);
+		//Parseo variables
+		numeroUno = parseInt(numeroUno);
+		numeroDos = parseInt(numeroDos);
+		// Realizo las operaciones
 	
-	multiplicacion = numeroUno * numeroDos;
+		multiplicacion = numeroUno * numeroDos;
+	
+	
+		alert("El resultado de la resta es : " + multiplicacion);
+		
 
-	alert("El resultado es : " + multiplicacion);
-	
-	
-}
 
-function dividir()
-{
+	 }
 
+	 {
+		 //Declaro variables
 	var numeroUno;
 	var numeroDos;
 	var division;
-	
-	numeroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;
-	
-	numeroUno=parseInt(numeroUno);
-	numeroDos=parseInt(numeroDos);
-	
+
+	//Tomo datos por value
+	numeroUno = txtIdNumeroUno.value;
+	numeroDos = txtIdNumeroDos.value;
+
+	//Parseo variables
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	// Realizo las operaciones
+
 	division = numeroUno / numeroDos;
 
-	alert("El resultado es : " + division);
-	
 
-
-
-
-	
+	alert("El resultado de la suma es : " + division);
 }
+
+
+
+
+
+
 
