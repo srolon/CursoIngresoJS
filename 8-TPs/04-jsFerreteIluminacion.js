@@ -12,15 +12,14 @@ function CalcularPrecio ()
 {
 
     var cantidadLamparas;
-    var precioLamparas = 35;
+    var precioLamparas;
     var ImpuestoDelPrecio;
     var precioConDescuento;
     var marcaElegida;
     
 
-
-
     cantidadLamparas = txtIdCantidad.value;
+    precioLamparas= 35;
     precioLamparas = parseInt(precioLamparas);
     precioConDescuento = cantidadLamparas*precioLamparas;
     marcaElegida = Marca.value;
@@ -38,21 +37,21 @@ function CalcularPrecio ()
 
      if(cantidadLamparas == 5 && marcaElegida == "ArgentinaLuz" ) 
         {
-        precioConDescuento = precioConDescuento*0.4;
+        precioConDescuento = precioConDescuento*0.6;
         }
          else 
         {
-            precioConDescuento = precioConDescuento*0.3;
+            precioConDescuento = precioConDescuento*0.7;
          }
 
          // Punto C
 
          if (cantidadLamparas == 4 && marcaElegida == "ArgentinaLuz" || marcaElegida == "FelipeLamparas")
              {
-                 precioConDescuento = precioConDescuento*0.25;
+                 precioConDescuento = precioConDescuento*0.75;
              } 
              else {
-                precioConDescuento = precioConDescuento*0.20;
+                precioConDescuento = precioConDescuento*0.8;
              }
     
 
@@ -62,15 +61,15 @@ function CalcularPrecio ()
              if(cantidadLamparas == 3 && marcaElegida == "ArgentinaLuz" )
              {
                
-                precioConDescuento = precioConDescuento*0.15;
+                precioConDescuento = precioConDescuento*0.85;
              } 
 
              if(cantidadLamparas == 3 && marcaElegida == "FelipeLamparas" )
              {
-                precioConDescuento = precioConDescuento*0.10;
+                precioConDescuento = precioConDescuento*0.9;
              }
              else {
-                precioConDescuento = precioConDescuento*0.05;
+                precioConDescuento = precioConDescuento*0.95;
              }
                 
 

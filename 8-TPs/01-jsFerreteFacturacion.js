@@ -3,6 +3,9 @@ A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
+
+    //Este es el punto A
+
 function Sumar () 
 {
 
@@ -67,13 +70,9 @@ function PrecioFinal ()
     var precioUno;
     var precioDos;
     var precioTres;
-    var iva;
-    var precioUnoConIva;
-    var precioDosConIva;
-    var precioTresConIva;
-    var precioFinalConIva;
-
-
+    var iva =0.21;
+    var precioFinal;
+  
     precioUno = txtIdPrecioUno.value;
     precioDos = txtIdPrecioDos.value;
     precioTres = txtIdPrecioTres.value;
@@ -82,14 +81,10 @@ function PrecioFinal ()
     precioUno = parseInt(precioUno);
     precioDos = parseInt( precioDos);
     precioTres = parseInt( precioTres);
-    iva = 0.21;
 
-    precioUnoConIva = precioUno + (precioUno*iva);
-    precioDosConIva = precioDos + (precioDos*iva);
-    precioTresConIva = precioTres + (precioTres*iva);
-    PrecioFinalConIva = precioUnoConIva + precioDosConIva + precioTresConIva;
+    precioFinal = (precioUno + precioDos + precioTres) * iva;
 
-    alert("El precio final de la suma de los 3 productos es: " + precioFinalConIva);
+    alert("El precio final de la suma de los 3 productos es: " + precioFinal);
 
 
 	
